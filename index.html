@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,24 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todos</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="scripts/app.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Todo Managements</h1> 
+      <h1>Todo Managements</h1>
       <p>Manage your (daily) todos with ease!</p>
     </header>
     <main id="todos-app">
       <section id="todo-management">
-        <form>
+        <form @submit="saveTodo">
           <label for="text">Todo text</label>
-          <input type="text" id="text" name="text" required />
-          <button>Save</button>
+          <input type="text" id="text" v-model="enteredTodoText" required />
+          <button>{{ buttonLegend }}</button>
         </form>
       </section>
       <section id="todos">
-        <ul id="todos-list">
+        <p v-if="todos.length === 0 && !isLoading">
+          No to-dos added yet, please add some!
+        </p>
+        <p v-else-if="isLoading">Loading...</p>
+        <ul v-else id="todos-list">
+          <li v-for="todo in todos">
+            <p>{{ todo.text }}</p>
+            <div>
+              <button @click="startEditTodo(todo._id)">Edit</button>
+              <button @click="deleteTodo(todo._id)">Delete</button>
+            </div>
+          </li>
         </ul>
       </section>
     </main>
