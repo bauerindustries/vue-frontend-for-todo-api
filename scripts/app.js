@@ -1,6 +1,7 @@
 const TodosApp = {
   data() {
     return {
+      todo_API_URI: 'http://localhost:3000/todos/',
       isLoading: false,
       enteredTodoText: '',
       todos: [],
@@ -18,7 +19,7 @@ const TodosApp = {
         let response;
 
         try {
-          response = await fetch('http://localhost:3000/todos', {
+          response = await fetch(this.todo_API_URI, {
             method: 'POST',
             body: JSON.stringify({
               text: this.enteredTodoText,
@@ -52,7 +53,7 @@ const TodosApp = {
         let response;
 
         try {
-          response = await fetch('http://localhost:3000/todos/' + todoId, {
+          response = await fetch(this.todo_API_URI + todoId, {
             method: 'PATCH',
             body: JSON.stringify({
               text: this.enteredTodoText,
@@ -98,7 +99,6 @@ const TodosApp = {
       });
       this.enteredTodoText = this.todos[index].text;
       this.buttonLegend = 'Update';
-      this.enteredTodoText.parentElement.focus();
     },
 
     // delete
@@ -106,7 +106,7 @@ const TodosApp = {
       let response;
 
       try {
-        response = await fetch('http://localhost:3000/todos/' + todoId, {
+        response = await fetch(this.todo_API_URI + todoId, {
           method: 'DELETE',
         });
       } catch (error) {
@@ -130,7 +130,7 @@ const TodosApp = {
     // async created() {
     let response;
     try {
-      response = await fetch('http://localhost:3000/todos');
+      response = await fetch(this.todo_API_URI);
     } catch (error) {
       alert('Something went wrong!');
       this.isLoading = false;
