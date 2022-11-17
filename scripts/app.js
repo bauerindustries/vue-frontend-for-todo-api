@@ -2,7 +2,7 @@ const TodosApp = {
   data() {
     return {
       // todo_API_URI: 'http://localhost:3000/todos/',
-      todo_API_URI: 'https://todos-rest-api-demo.onrender.com/todos',
+      todo_API_URI: 'https://todos-rest-api-demo.onrender.com/todos/',
       isLoading: false,
       enteredTodoText: '',
       todos: [],
