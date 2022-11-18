@@ -25,8 +25,9 @@
           <input
             type="text"
             id="text"
+            ref="editButton"
             v-model="enteredTodoText"
-            placeholder="Add a new to-do item..."
+            :placeholder="[[ buttonPlaceholder ]]"
             required
           />
           <button>{{ buttonLegend }}</button>
@@ -41,7 +42,7 @@
           <li v-for="todo in todos">
             <p>{{ todo.text }}</p>
             <div>
-              <button @click="startEditTodo(todo._id)">Edit</button>
+              <button @click="startEditTodo(todo._id), focusOnEditButton()">Edit</button>
               <button @click="deleteTodo(todo._id)">Delete</button>
             </div>
           </li>

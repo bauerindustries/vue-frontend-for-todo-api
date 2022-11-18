@@ -7,6 +7,7 @@ const TodosApp = {
       enteredTodoText: '',
       todos: [],
       editedTodoId: null,
+      buttonPlaceholder: 'Add a new to-do item...',
       buttonLegend: 'Save',
     };
   },
@@ -86,14 +87,21 @@ const TodosApp = {
 
         this.todos[index] = updatedTodo;
       }
-      // reset input & button legend
+      // reset input, placeholder text & button legend
       this.editedTodoId = null;
       this.enteredTodoText = '';
       this.buttonLegend = 'Save';
+      this.buttonPlaceholder = 'Add a new to-do item...';
+    },
+
+    focusOnEditButton() {
+      const editButtonRef = this.$refs.editButton;
+      editButtonRef.focus();
     },
 
     // edit
     startEditTodo(todoId) {
+      this.buttonPlaceholder = 'Enter the updated text...';
       this.editedTodoId = todoId;
       const index = this.todos.findIndex(function (todo) {
         return todo._id === todoId;
@@ -125,6 +133,7 @@ const TodosApp = {
       });
     },
   },
+
   // get todos from db via API
   async created() {
     this.isLoading = true;
