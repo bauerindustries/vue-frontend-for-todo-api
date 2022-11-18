@@ -14,8 +14,18 @@
     <header>
       <h1>To-do Management</h1>
       <div class="project-description">
-        <h2 >(Decoupled Vue front-end -> Node API -> MondoDB CRUD operations)</h2>
-        <sub>For more details, see the <a href="https://github.com/bauerindustries/vue-frontend-for-todo-api">Front-end</a> and   <a href="https://github.com/bauerindustries/todos-rest-api">API</a> Github repostory Readme files.</a>.</sub>
+        <h2>
+          (Decoupled Vue front-end -> Node API -> MondoDB CRUD operations)
+        </h2>
+        <sub
+          >For more details, see the Readme files in the
+          <a href="https://github.com/bauerindustries/vue-frontend-for-todo-api"
+            >Front-end</a
+          >
+          and
+          <a href="https://github.com/bauerindustries/todos-rest-api">API</a>
+          Github repostories.</sub
+        >
       </div>
     </header>
     <main id="todos-app">
@@ -42,7 +52,9 @@
           <li v-for="todo in todos">
             <p>{{ todo.text }}</p>
             <div>
-              <button @click="startEditTodo(todo._id), focusOnEditButton()">Edit</button>
+              <button @click="startEditTodo(todo._id), focusOnEditButton()">
+                Edit
+              </button>
               <button @click="deleteTodo(todo._id)">Delete</button>
             </div>
           </li>
