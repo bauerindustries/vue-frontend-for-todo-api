@@ -41,12 +41,13 @@ label {
   font-weight: bold;
   display: block;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 input {
   font: inherit;
   font-size: 1.5rem;
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
   padding: 0.25rem;
   border-radius: 4px;
   border: 1px solid rgb(204, 204, 204);
@@ -64,6 +65,22 @@ input:focus {
   padding: 2rem;
   border-radius: 6px;
   background-color: rgb(29, 6, 56);
+}
+
+.project-description {
+  width: 95%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+a,
+.project-description h2 {
+  color: rgb(204, 165, 255);
+}
+
+sub {
+  font-size: 1rem;
+  width: 95%;
 }
 
 #todos {
