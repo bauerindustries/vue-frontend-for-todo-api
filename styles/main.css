@@ -103,8 +103,13 @@ sub {
   border-radius: 6px;
   font-size: 1.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+#todos-list li div {
+  display: flex;
 }
 
 #todos-list button {
@@ -115,4 +120,10 @@ sub {
 #todos-list button:hover,
 #todos-list button:active {
   background-color: rgb(99, 18, 136);
+}
+
+@media (min-width: 640px) {
+  #todos-list li {
+    flex-direction: row;
+  }
 }
