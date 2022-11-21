@@ -4,9 +4,10 @@
 A decoupled **Vue.js**-based Front-end GUI for a **Node.js/MongoDB-based** REST API, managing a simple set of CRUD operations. 
 
 ## Operations:
-* Read any existing to-do items ()
+Send request methods to the [API](https://github.com/bauerindustries/todos-rest-api) endpoints, to achieve the following:
+* Read any existing to-do items
 * Create new to-do item/s
-* Edit existing to-do item/s
+* Update existing to-do item/s
 * Delete to-do item/s
 
 ## Hosting:
