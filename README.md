@@ -1,11 +1,16 @@
-# vue-demo-frontend-todos
+# Vue decoupled Front-end GUI
 
-## What is it?
-A decoupled **Vue.js**-based Front-end GUI for a **Node.js/MongoDB-based** REST API, managing a simple set of CRUD operations. 
+A demonstration Front-end GUI for a REST API, managing a simple set of CRUD operations. 
+
+## Technologies used:
+* Vue.js
+* HTML
+* CSS
+* Javascript
 
 ## Operations:
-Send request methods to the [API](https://github.com/bauerindustries/todos-rest-api) endpoints, to achieve the following:
-* Read any existing to-do items
+GUI input sends request methods and data to the [API](https://github.com/bauerindustries/todos-rest-api) endpoints, to achieve the following:
+* Read existing to-do items
 * Create new to-do item/s
 * Update existing to-do item/s
 * Delete to-do item/s
@@ -19,3 +24,6 @@ The MongoDB database is hosted on MongoDB's Atlas Database.
 
 ## The API:
 For more details on the workings of the API, please see the repository [Readme](https://github.com/bauerindustries/todos-rest-api).
+
+## Notes
+This project was built as a late-stage module/project on [100 Days of Code - Web Development Bootcamp](https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/).
