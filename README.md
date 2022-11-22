@@ -16,11 +16,14 @@ GUI input sends request methods and data to the [API](https://github.com/bauerin
 * Delete to-do item/s
 
 ## Hosting:
-You can see this front-end running [here](https://shop-demo-node-js-express-mondodb.onrender.com) on Render.
+You can see this front-end running [here](https://cute-peony-3eb499.netlify.app) on Netlify.
 
 The API is running [here](https://todos-rest-api-demo.onrender.com/todos).
 
 The MongoDB database is hosted on MongoDB's Atlas Database.
+
+## Requirements:
+* The app.js data() object variable *todo_API_URI* must be pointed to the URL of the API
 
 ## The API:
 For more details on the workings of the API, please see the repository [Readme](https://github.com/bauerindustries/todos-rest-api).
