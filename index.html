@@ -49,7 +49,6 @@
         </p>
         <p v-else-if="isLoading">
           <span class="blink"> Loading To-do list from database...</span><br />
-          (This could take a few seconds the first time)
         </p>
         <ul v-else id="todos-list">
           <li v-for="todo in todos">
