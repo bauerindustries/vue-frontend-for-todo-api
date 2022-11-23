@@ -90,6 +90,23 @@ sub {
   max-width: 45rem;
 }
 
+#todos p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.blink {
+  animation: blinker 3s linear infinite;
+  font-weight: bold;
+  display: block;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 #todos-list {
   list-style: none;
   margin: 0;
