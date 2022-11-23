@@ -156,6 +156,7 @@ const TodosApp = {
 
     const responseData = await response.json();
     this.todos = responseData.todos;
+    this.focusOnInput();
   },
 };
 
