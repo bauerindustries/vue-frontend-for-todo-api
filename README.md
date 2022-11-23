@@ -23,10 +23,10 @@ The API is running [here](https://todos-rest-api-demo.onrender.com/todos).
 The MongoDB database is hosted on MongoDB's Atlas Database.
 
 ## Requirements:
-* The app.js data() object variable *todo_API_URI* must be pointed to the URL of the API
+* The app.js data() object variable todo_API_URI must be pointed to the URL of the API
 
 ## The API:
 For more details on the workings of the API, please see the repository [Readme](https://github.com/bauerindustries/todos-rest-api).
 
 ## Notes
-This project was built as a late-stage module/project on [100 Days of Code - Web Development Bootcamp](https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/).
+This project was built from scratch as a late-stage module/project on [100 Days of Code - Web Development Bootcamp](https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/).
