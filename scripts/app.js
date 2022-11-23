@@ -92,6 +92,7 @@ const TodosApp = {
       this.enteredTodoText = '';
       this.buttonLegend = 'Save';
       this.buttonPlaceholder = 'Add a new to-do item...';
+      this.focusOnInput();
     },
 
     focusOnInput() {
