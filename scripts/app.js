@@ -94,9 +94,8 @@ const TodosApp = {
       this.buttonPlaceholder = 'Add a new to-do item...';
     },
 
-    focusOnEditButton() {
-      const editButtonRef = this.$refs.editButton;
-      editButtonRef.focus();
+    focusOnInput() {
+      this.$refs.theInput.focus();
     },
 
     // edit
