@@ -46,7 +46,7 @@
           No to-dos added yet, please add some!
         </p>
         <p v-else-if="isLoading">
-          <span class="blink"> Loading To-do list from database...</span><br />
+          <span class="blink">Retrieving To-do list via API...</span><br />
         </p>
         <ul v-else id="todos-list">
           <li v-for="todo in todos">
