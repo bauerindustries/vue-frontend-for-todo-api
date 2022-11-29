@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-color: rgb(35, 19, 53);
+  background-color: rgb(19, 53, 21);
   color: white;
   text-align: center;
 }
@@ -26,15 +26,15 @@ button {
   cursor: pointer;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
-  background-color: rgb(70, 32, 119);
+  background-color: rgb(13, 104, 24);
   color: white;
-  border: 1px solid rgb(70, 32, 119);
+  border: 1px solid rgb(13, 104, 24);
 }
 
 button:hover,
 button:active {
-  background-color: rgb(69, 18, 136);
-  border-color: rgb(69, 18, 136);
+  background-color: rgb(22, 164, 63);
+  border-color: rgb(22, 164, 63);
 }
 
 label {
@@ -56,7 +56,7 @@ input {
 }
 
 input:focus {
-  background-color: rgb(243, 236, 253);
+  background-color: rgb(236, 253, 241);
 }
 
 #todo-management form {
@@ -65,7 +65,7 @@ input:focus {
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background-color: rgb(29, 6, 56);
+  background-color: rgb(6, 38, 9);
 }
 
 .project-description {
@@ -76,7 +76,7 @@ input:focus {
 
 a,
 .project-description h2 {
-  color: rgb(204, 165, 255);
+  color: rgb(165, 255, 186);
 }
 
 sub {
@@ -116,7 +116,7 @@ sub {
 #todos-list li {
   margin: 1rem 0;
   padding: 1.5rem;
-  background-color: rgb(69, 18, 136);
+  background-color: rgb(18, 136, 32);
   border-radius: 6px;
   font-size: 1.5rem;
   display: flex;
@@ -136,7 +136,7 @@ sub {
 
 #todos-list button:hover,
 #todos-list button:active {
-  background-color: rgb(99, 18, 136);
+  background-color: rgb(30, 212, 82);
 }
 
 @media (min-width: 640px) {
