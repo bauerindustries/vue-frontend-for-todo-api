@@ -29,4 +29,4 @@ The MongoDB database is hosted on MongoDB's Atlas Database.
 For more details on the workings of the API, please see the repository [Readme](https://github.com/bauerindustries/todos-rest-api).
 
 ## Notes
-This project was built from scratch as a late-stage module/project on [100 Days of Code - Web Development Bootcamp](https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/).
+This project was built from scratch as a late-stage module/project on [100 Days of Code - Web Development Bootcamp](https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/), with refinements and styling added after completion.
