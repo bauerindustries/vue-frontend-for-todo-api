@@ -4,17 +4,28 @@
 
 html {
   font-family: sans-serif;
+  min-height: 100%;
 }
 
 body {
   margin: 0;
+  height: 100%;
   background-color: rgb(19, 53, 21);
-  color: white;
+  color: #354230;
   text-align: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(200, 226, 123),
+    rgb(137, 236, 177),
+    rgb(41, 129, 45)
+  );
+  font-family: 'Esteban', serif;
+  font-weight: normal;
 }
 
 h1 {
   font-size: 3rem;
+  color: #354230;
 }
 
 header p {
@@ -23,22 +34,22 @@ header p {
 
 button {
   font: inherit;
+  font-size: 1.2rem;
   cursor: pointer;
   padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-  background-color: rgb(13, 104, 24);
-  color: white;
-  border: 1px solid rgb(13, 104, 24);
+  border-radius: 0.5rem;
+  background-color: rgba(183, 225, 188, 0.71);
+  border: none;
 }
 
 button:hover,
 button:active {
-  background-color: rgb(22, 164, 63);
-  border-color: rgb(22, 164, 63);
+  background-color: rgba(144, 183, 149, 0.71);
 }
 
 label {
   font-weight: bold;
+  font-size: 1.33rem;
   display: block;
   margin-bottom: 0.5rem;
   text-align: left;
@@ -48,9 +59,10 @@ input {
   font: inherit;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  padding: 0.25rem;
-  border-radius: 4px;
-  border: 1px solid rgb(204, 204, 204);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ffffffbf;
+  border: none;
   width: 100%;
   outline: none;
 }
@@ -64,8 +76,8 @@ input:focus {
   max-width: 30rem;
   margin: 2rem auto;
   padding: 2rem;
-  border-radius: 6px;
-  background-color: rgb(6, 38, 9);
+  border-radius: 1.5rem;
+  background-color: rgba(0, 157, 15, 0.24);
 }
 
 .project-description {
@@ -76,7 +88,7 @@ input:focus {
 
 a,
 .project-description h2 {
-  color: rgb(165, 255, 186);
+  color: rgb(72, 111, 81);
 }
 
 sub {
@@ -116,8 +128,8 @@ sub {
 #todos-list li {
   margin: 1rem 0;
   padding: 1.5rem;
-  background-color: rgb(18, 136, 32);
-  border-radius: 6px;
+  background-color: rgba(229, 255, 216, 0.77);
+  border-radius: 1.5rem;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -131,12 +143,13 @@ sub {
 
 #todos-list button {
   margin: 0 0.5rem;
-  border-color: white;
+  background-color: rgba(13, 104, 24, 0.1);
+  border: 1px solid rgba(13, 104, 24, 0.1);
 }
 
 #todos-list button:hover,
 #todos-list button:active {
-  background-color: rgb(53, 212, 30);
+  background-color: rgba(76, 108, 71, 0.39);
 }
 
 @media (min-width: 640px) {
