@@ -40,11 +40,13 @@ button {
   border-radius: 0.5rem;
   background-color: rgba(183, 225, 188, 0.71);
   border: none;
+  transition: all 300ms;
 }
 
 button:hover,
 button:active {
   background-color: rgba(144, 183, 149, 0.71);
+  transition: all 300ms;
 }
 
 label {
