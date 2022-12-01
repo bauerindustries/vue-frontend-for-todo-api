@@ -144,7 +144,7 @@ sub {
 #todos-list button {
   margin: 0 0.5rem;
   background-color: rgba(13, 104, 24, 0.1);
-  border: 1px solid rgba(13, 104, 24, 0.1);
+  border: none;
 }
 
 #todos-list button:hover,
