@@ -47,7 +47,7 @@ const TodosApp = {
           _id: responseData.createdTodo.id,
         };
 
-        this.todos.push(newTodo);
+        this.todos.unshift(newTodo);
       } else {
         // update existing todo
         const todoId = this.editedTodoId;
